@@ -1,0 +1,19 @@
+
+    #Curso node
+
+    Para ejecutar docker:
+    docker compose up -d
+    
+#Prima Orm
+npm install prisma @types/pg --save-dev
+npm install @prisma/client @prisma/adapter-pg pg dotenv
+
+
+npx prisma init --datasource-provider postgresql
+ npx prisma migrate dev --name init            
+ 
+
+ 
+https://www.prisma.io/docs/prisma-orm/quickstart/postgresql
+
+
