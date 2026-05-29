@@ -14,7 +14,7 @@ export class TodoRepositoryImpl implements TodoRepository {
     getAll(): Promise<TodoEntity[]> {
         return this.datasource.getAll();
     }
-    findById(id: number): Promise<TodoEntity | null> {
+    findById(id: number): Promise<TodoEntity> {
         return this.datasource.findById(id);
     }
     updateById(updateTodoDto: UpdateTodoDto): Promise<TodoEntity> {

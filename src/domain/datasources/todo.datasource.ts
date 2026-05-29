@@ -9,7 +9,7 @@ export abstract class TodoDataSource {
     
     abstract getAll(): Promise<TodoEntity[]>;
 
-    abstract findById(id: number): Promise<TodoEntity | null>;
+    abstract findById(id: number): Promise<TodoEntity>;
     
     abstract updateById(updateTodoDto: UpdateTodoDto): Promise<TodoEntity>;
     
